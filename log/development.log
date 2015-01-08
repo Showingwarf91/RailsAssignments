@@ -47,3 +47,26 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'tags'
 [0m
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `created_at`, `updated_at`) VALUES ('Sports', '2015-01-08 08:16:33.324512', '2015-01-08 08:16:33.324512')
+  [1m[36m (37.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Section of Sports', 1, '2015-01-08 08:18:50.211590', '2015-01-08 08:18:50.211590')
+  [1m[36m (45.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM `comments` WHERE `comments`.`id` = 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `articles` WHERE `articles`.`id` = 1
+  [1m[36m (43.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `created_at`, `updated_at`) VALUES ('Sports', '2015-01-08 08:19:39.197275', '2015-01-08 08:19:39.197275')
+  [1m[36m (43.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments`
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Section of Sports', 2, '2015-01-08 08:20:01.441660', '2015-01-08 08:20:01.441660')[0m
+  [1m[35m (46.7ms)[0m  COMMIT
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments`[0m
