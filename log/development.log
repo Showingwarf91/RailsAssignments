@@ -70,3 +70,287 @@ WHERE fk.referenced_column_name is not null
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Section of Sports', 2, '2015-01-08 08:20:01.441660', '2015-01-08 08:20:01.441660')[0m
   [1m[35m (46.7ms)[0m  COMMIT
   [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments`
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+Mysql2::Error: Table 'blog_db.articles_tags' doesn't exist: SHOW FULL FIELDS FROM `articles_tags`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateArticlesTags (20150108083228)
+  [1m[35m (91.7ms)[0m  CREATE TABLE `articles_tags` (`id` int(11) auto_increment PRIMARY KEY, `articles_id` int(11), `tags_id` int(11),  INDEX `index_articles_tags_on_articles_id`  (`articles_id`) ,  INDEX `index_articles_tags_on_tags_id`  (`tags_id`) ) ENGINE=InnoDB
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108083228')
+  [1m[36m (50.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles_tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles_tags`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `tags` (`name`, `created_at`, `updated_at`) VALUES ('Football', '2015-01-08 08:35:22.773121', '2015-01-08 08:35:22.773121')[0m
+  [1m[35m (188.5ms)[0m  ROLLBACK
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 2[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 2
+  [1m[36m (88.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (210.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateArticles (20150108081142)
+  [1m[35m (95.6ms)[0m  CREATE TABLE `articles` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `content` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081142')
+  [1m[36m (40.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150108081221)
+  [1m[35m (88.8ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `comment` varchar(255), `article_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081221')
+  [1m[36m (42.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20150108081239)
+  [1m[35m (88.8ms)[0m  CREATE TABLE `tags` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081239')
+  [1m[36m (43.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateArticlesTags (20150108083228)
+  [1m[35m (84.8ms)[0m  CREATE TABLE `articles_tags` (`id` int(11) auto_increment PRIMARY KEY, `article_id` int(11), `tag_id` int(11),  INDEX `index_articles_tags_on_article_id`  (`article_id`) ,  INDEX `index_articles_tags_on_tag_id`  (`tag_id`) ) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108083228')
+  [1m[36m (43.6ms)[0m  [1mCOMMIT[0m
+Migrating to DeleteTableArticlesTags (20150108085033)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150108085033')[0m
+  [1m[35m (43.1ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles_tags'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `articles_tags`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `tags`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeleteTableArticlesTags1 (20150108085056)
+  [1m[35m (38.0ms)[0m  DROP TABLE `articles_tags`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108085056')
+  [1m[36m (50.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateArticlesTags (20150108085423)
+  [1m[35m (87.1ms)[0m  CREATE TABLE `articles_tags` (`id` int(11) auto_increment PRIMARY KEY, `article_id` int(11), `tag_id` int(11),  INDEX `index_articles_tags_on_article_id`  (`article_id`) ,  INDEX `index_articles_tags_on_tag_id`  (`tag_id`) ) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108085423')
+  [1m[36m (46.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles_tags'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `articles_tags`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `articles` (`title`, `created_at`, `updated_at`) VALUES ('Sports', '2015-01-08 08:56:14.062866', '2015-01-08 08:56:14.062866')[0m
+  [1m[35m (46.7ms)[0m  COMMIT
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `tags` (`name`, `created_at`, `updated_at`) VALUES ('Football', '2015-01-08 08:57:09.904353', '2015-01-08 08:57:09.904353')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles_tags` (`article_id`, `tag_id`) VALUES (1, 1)
+  [1m[36m (43.8ms)[0m  [1mCOMMIT[0m
