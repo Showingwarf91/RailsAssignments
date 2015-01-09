@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+
+<div>
+<h1>Articles Table</h1>
+<table>
+  <tr>
+    <td>Title</td>
+    <td>Content</td>
+  </tr>
+  <%@articles.each do |x|%>
+    <tr>
+      <td><%= link_to x.title, 'articles/display_article?query='+(x.id).to_s
+      %></td>
+      <td><%="#{x.content} "%></td>
+    </tr>
+  <%end%>
+</table>
+</div>
+
+<div>
+  <h1>Tags Table</h1>
+  <table>
+    <tr>
+      <td>Name</td>
+    </tr>
+    <%@tags.each do |x|%>
+      <tr>
+        <td><%= link_to x.name,
+        'tags/display_article_related_to_tags?query='+(x.id).to_s
+        %></td>
+      </tr>
+    <%end%>
+  </table>
+</div>
+<div>
+  <h2>Search Articles</h2>
+  <form action="articles/search" method="get">
+    <input type="text" name="search_input"/>
+    <input type="submit" value="submit"/>
+  </form>
+</div>
+</body>
+</html>

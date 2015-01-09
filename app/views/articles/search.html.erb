@@ -1,0 +1,14 @@
+<h1>Searched Article</h1>
+<table>
+  <tr>
+    <td>Title</td>
+    <td>Content</td>
+  </tr>
+  <%@articles.each do |x|%>
+    <tr>
+      <td><%=x.title%></td>
+      <td><%=x.content%></td>
+    </tr>
+  <%end%>
+</table>
+

@@ -1,0 +1,14 @@
+
+<h1><%=@linked_tag.name%></h1>
+<table>
+  <tr>
+    <td>Title</td>
+    <td>Content</td>
+  </tr>
+    <%@linked_tag_articles.each do |x|%>
+      <tr>
+      <td><%=x.title%></td>
+      <td><%=x.content%></td>
+    </tr>
+    <%end%>
+</table>
