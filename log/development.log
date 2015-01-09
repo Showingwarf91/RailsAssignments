@@ -5487,3 +5487,1959 @@ Processing by ArticlesController#display_article as HTML
   [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 3
   Rendered articles/display_article.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.2ms)
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 1 LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:35:32 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT `tags`.* FROM `tags`[0m
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 203ms (Views: 181.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 15:35:33 +0545
+
+
+Started GET "/tags/display_article_related_to_tags?query=Football" for 127.0.0.1 at 2015-01-09 15:35:34 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Football"}
+  [1m[35mTag Load (0.6ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Football' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 34.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Football" for 127.0.0.1 at 2015-01-09 15:36:36 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Football"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Football' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Football" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Football"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Football' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 15:37:21 +0545
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:38:11 +0545
+Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT `tags`.* FROM `tags`[0m
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Blank" for 127.0.0.1 at 2015-01-09 15:38:14 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Blank"}
+  [1m[35mTag Load (0.3ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Blank' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 2[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Blank" for 127.0.0.1 at 2015-01-09 15:38:22 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Blank"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Blank' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 2[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=hsajkd" for 127.0.0.1 at 2015-01-09 15:38:27 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"hsajkd"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'hsajkd' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 3[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=new%20tag" for 127.0.0.1 at 2015-01-09 15:38:30 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"new tag"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'new tag' LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 4[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=hsajkd" for 127.0.0.1 at 2015-01-09 15:38:32 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"hsajkd"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'hsajkd' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 3[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+Mysql2::Error: Table 'blog_db.articles' doesn't exist: SELECT `articles`.* FROM `articles`
+  [1m[36m (84.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (233.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateArticles (20150108081142)
+  [1m[35m (85.5ms)[0m  CREATE TABLE `articles` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `content` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081142')
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150108081221)
+  [1m[35m (77.8ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `comment` varchar(255), `article_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081221')
+  [1m[36m (43.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20150108081239)
+  [1m[35m (88.8ms)[0m  CREATE TABLE `tags` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081239')
+  [1m[36m (33.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateArticlesTags (20150108085423)
+  [1m[35m (76.7ms)[0m  CREATE TABLE `articles_tags` (`id` int(11) auto_increment PRIMARY KEY, `articles_id` int(11), `tag_id` int(11),  INDEX `index_articles_tags_on_articles_id`  (`articles_id`) ,  INDEX `index_articles_tags_on_tag_id`  (`tag_id`) ) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108085423')
+  [1m[36m (43.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles_tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles_tags`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('Manchester United', 'Champions', '2015-01-09 09:56:44.086914', '2015-01-09 09:56:44.086914')[0m
+  [1m[35m (40.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('United', 'Fighting Champion', '2015-01-09 09:57:16.652852', '2015-01-09 09:57:16.652852')
+  [1m[36m (44.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('England', 'BombBlast', '2015-01-09 09:57:34.355211', '2015-01-09 09:57:34.355211')[0m
+  [1m[35m (42.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('Iraq', 'BombBlast', '2015-01-09 09:57:40.467527', '2015-01-09 09:57:40.467527')
+  [1m[36m (53.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('Pakistan', 'BombBlast', '2015-01-09 09:57:50.733608', '2015-01-09 09:57:50.733608')
+  [1m[36m (55.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `tags` (`name`, `created_at`, `updated_at`) VALUES ('Terrorism', '2015-01-09 09:58:25.466790', '2015-01-09 09:58:25.466790')
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `tags` (`name`, `created_at`, `updated_at`) VALUES ('Football', '2015-01-09 09:58:40.188734', '2015-01-09 09:58:40.188734')[0m
+  [1m[35m (41.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `tags` (`name`, `created_at`, `updated_at`) VALUES ('Sniper', '2015-01-09 09:58:46.507839', '2015-01-09 09:58:46.507839')
+  [1m[36m (45.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Noob UNited', 1, '2015-01-09 10:00:27.639870', '2015-01-09 10:00:27.639870')
+  [1m[36m (45.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('YEs it is a very noob team', 1, '2015-01-09 10:00:39.099075', '2015-01-09 10:00:39.099075')
+  [1m[36m (53.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Sounds noob to me', 2, '2015-01-09 10:00:59.734726', '2015-01-09 10:00:59.734726')
+  [1m[36m (32.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('What ???', 3, '2015-01-09 10:01:14.564001', '2015-01-09 10:01:14.564001')
+  [1m[36m (37.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Yay !!!', 4, '2015-01-09 10:01:32.049220', '2015-01-09 10:01:32.049220')[0m
+  [1m[35m (37.6ms)[0m  COMMIT
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Awesome  !!!', 5, '2015-01-09 10:01:45.664550', '2015-01-09 10:01:45.664550')[0m
+  [1m[35m (44.5ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT `tags`.* FROM `tags`[0m
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 47ms (Views: 39.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 15:46:58 +0545
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:47:00 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1[0m
+  Rendered articles/display_article.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:47:03 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1[0m
+  Rendered articles/display_article.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/display_article?query=United" for 127.0.0.1 at 2015-01-09 15:47:06 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"United"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'United' LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2[0m
+  Rendered articles/display_article.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/display_article?query=England" for 127.0.0.1 at 2015-01-09 15:47:08 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"England"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'England' LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 3[0m
+  Rendered articles/display_article.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/display_article?query=United" for 127.0.0.1 at 2015-01-09 15:47:10 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"United"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'United' LIMIT 1
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2[0m
+  Rendered articles/display_article.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:47:13 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1[0m
+  Rendered articles/display_article.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/display_article?query=Iraq" for 127.0.0.1 at 2015-01-09 15:47:19 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Iraq"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Iraq' LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 4[0m
+  Rendered articles/display_article.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/display_article?query=Pakistan" for 127.0.0.1 at 2015-01-09 15:47:21 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Pakistan"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Pakistan' LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 5[0m
+  Rendered articles/display_article.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:47:23 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.3ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 9ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:47:23 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.3ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:47:34 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:47:35 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (22.1ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:48:34 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+     5:     <td>Content</td>
+     6:   </tr>
+     7:   <tr>
+     8:     <%@linked_tag_articles.each do |x|%>
+     9:       <td><%=x.title%></td>
+    10:       <td><%=x.content%></td>
+    11:     <%end%>
+  app/views/tags/display_article_related_to_tags.erb:8:in `_app_views_tags_display_article_related_to_tags_erb__4080417997473876653_48282100'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:50:00 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 15ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:7:in `p'
+  app/controllers/tags_controller.rb:7:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:50:01 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:7:in `p'
+  app/controllers/tags_controller.rb:7:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 34.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 15:50:16 +0545
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:50:39 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 15ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.6ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags`
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.8ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags`
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:56:51 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 14ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:56:51 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:56:54 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.6ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:56:54 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (21.8ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:56:56 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:56:59 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:57:00 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1[0m
+  [1m[35mArticle Load (0.7ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.6ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=Terrorism" for 127.0.0.1 at 2015-01-09 15:57:01 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"Terrorism"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = 'Terrorism' LIMIT 1[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:57:04 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:57:15 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:57:17 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`title` = 'Manchester United' LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:58:03 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (no implicit conversion of Fixnum into String):
+    33:     <%@tags.each do |x|%>
+    34:       <tr>
+    35:         <td><%= link_to x.name, 'tags/display_article_related_to_tags?query='+x
+    36:         .id
+    37:         %></td>
+    38:       </tr>
+    39:     <%end%>
+  app/views/home/index.html.erb:36:in `+'
+  app/views/home/index.html.erb:36:in `block in _app_views_home_index_html_erb__2709849047975042436_70069779009600'
+  app/views/home/index.html.erb:33:in `_app_views_home_index_html_erb__2709849047975042436_70069779009600'
+  app/controllers/home_controller.rb:5:in `index'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:58:30 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (no implicit conversion of Fixnum into String):
+    32:     </tr>
+    33:     <%@tags.each do |x|%>
+    34:       <tr>
+    35:         <td><%= link_to x.name, 'tags/display_article_related_to_tags?query='+x.id
+    36:         %></td>
+    37:       </tr>
+    38:     <%end%>
+  app/views/home/index.html.erb:35:in `+'
+  app/views/home/index.html.erb:35:in `block in _app_views_home_index_html_erb__2709849047975042436_48559060'
+  app/views/home/index.html.erb:33:in `_app_views_home_index_html_erb__2709849047975042436_48559060'
+  app/controllers/home_controller.rb:5:in `index'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 15:58:56 +0545
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:58:58 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 0 LIMIT 1[0m
+  Rendered articles/display_article.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     6:     <td>Comments</td>
+     7:   </tr>
+     8:   <tr>
+     9:     <td><%=@linked_article.title%></td>
+    10:     <td><%=@linked_article.content%></td>
+    11:     <td><%@linked_article.comments.each do |x|%>
+    12:         <%=x.comment%>
+  app/views/articles/display_article.html.erb:9:in `_app_views_articles_display_article_html_erb___198219390545596709_70069787991060'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (21.7ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:58:58 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 0 LIMIT 1
+  Rendered articles/display_article.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     6:     <td>Comments</td>
+     7:   </tr>
+     8:   <tr>
+     9:     <td><%=@linked_article.title%></td>
+    10:     <td><%=@linked_article.content%></td>
+    11:     <td><%@linked_article.comments.each do |x|%>
+    12:         <%=x.comment%>
+  app/views/articles/display_article.html.erb:9:in `_app_views_articles_display_article_html_erb___198219390545596709_70069787022700'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (22.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:59:15 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:59:16 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 0 LIMIT 1[0m
+  Rendered articles/display_article.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     6:     <td>Comments</td>
+     7:   </tr>
+     8:   <tr>
+     9:     <td><%=@linked_article.title%></td>
+    10:     <td><%=@linked_article.content%></td>
+    11:     <td><%@linked_article.comments.each do |x|%>
+    12:         <%=x.comment%>
+  app/views/articles/display_article.html.erb:9:in `_app_views_articles_display_article_html_erb___198219390545596709_70069787991060'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (20.2ms)
+
+
+Started GET "/articles/display_article?query=Manchester%20United" for 127.0.0.1 at 2015-01-09 15:59:16 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"Manchester United"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 0 LIMIT 1
+  Rendered articles/display_article.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     6:     <td>Comments</td>
+     7:   </tr>
+     8:   <tr>
+     9:     <td><%=@linked_article.title%></td>
+    10:     <td><%=@linked_article.content%></td>
+    11:     <td><%@linked_article.comments.each do |x|%>
+    12:         <%=x.comment%>
+  app/views/articles/display_article.html.erb:9:in `_app_views_articles_display_article_html_erb___198219390545596709_70069787022700'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 15:59:52 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/display_article?query=1" for 127.0.0.1 at 2015-01-09 15:59:53 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/display_article?query=2" for 127.0.0.1 at 2015-01-09 15:59:56 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2
+  Rendered articles/display_article.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/display_article?query=3" for 127.0.0.1 at 2015-01-09 15:59:59 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 3
+  Rendered articles/display_article.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles_tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles_tags`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+
+
+Started GET "/tags/display_article_related_to_tags?query=1" for 127.0.0.1 at 2015-01-09 16:31:54 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"1"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = '1' LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `articles' for nil:NilClass):
+  app/controllers/tags_controller.rb:5:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (18.4ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=1" for 127.0.0.1 at 2015-01-09 16:31:54 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"1"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = '1' LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `articles' for nil:NilClass):
+  app/controllers/tags_controller.rb:5:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (21.1ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=2" for 127.0.0.1 at 2015-01-09 16:31:59 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"2"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = '2' LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `articles' for nil:NilClass):
+  app/controllers/tags_controller.rb:5:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (18.9ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=2" for 127.0.0.1 at 2015-01-09 16:31:59 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"2"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = '2' LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `articles' for nil:NilClass):
+  app/controllers/tags_controller.rb:5:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (18.4ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=3" for 127.0.0.1 at 2015-01-09 16:32:02 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"3"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = '3' LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `articles' for nil:NilClass):
+  app/controllers/tags_controller.rb:5:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=3" for 127.0.0.1 at 2015-01-09 16:32:02 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"3"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`name` = '3' LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `articles' for nil:NilClass):
+  app/controllers/tags_controller.rb:5:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 16:32:03 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 48ms (Views: 40.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 16:33:25 +0545
+
+
+Started GET "/articles/display_article?query=1" for 127.0.0.1 at 2015-01-09 16:33:27 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=1" for 127.0.0.1 at 2015-01-09 16:33:29 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"1"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 1 LIMIT 1[0m
+  [1m[35mArticle Load (1.1ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 13ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=1" for 127.0.0.1 at 2015-01-09 16:33:30 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"1"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 1 LIMIT 1[0m
+  [1m[35mArticle Load (0.7ms)[0m  SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'articles_tags.article_id' in 'on clause': SELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1):
+  app/controllers/tags_controller.rb:6:in `p'
+  app/controllers/tags_controller.rb:6:in `display_article_related_to_tags'
+
+
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/c0met_o7/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 49ms (Views: 41.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 16:34:05 +0545
+
+
+Started GET "/articles/display_article?query=1" for 127.0.0.1 at 2015-01-09 16:34:06 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1
+  Rendered articles/display_article.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/display_article?query=2" for 127.0.0.1 at 2015-01-09 16:34:08 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2
+  Rendered articles/display_article.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/display_article?query=3" for 127.0.0.1 at 2015-01-09 16:34:10 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 3
+  Rendered articles/display_article.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/display_article?query=2" for 127.0.0.1 at 2015-01-09 16:34:12 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2
+  Rendered articles/display_article.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:23 +0545
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:24 +0545
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT `tags`.* FROM `tags`
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 16:36:25 +0545
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT `tags`.* FROM `tags`[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mTag Load (1.4ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[35mSQL (40.7ms)[0m  DELETE FROM `articles`
+  [1m[36mSQL (40.3ms)[0m  [1mDELETE FROM `tags`[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36m (81.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (199.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateArticles (20150108081142)
+  [1m[35m (87.9ms)[0m  CREATE TABLE `articles` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `content` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081142')
+  [1m[36m (51.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150108081221)
+  [1m[35m (77.8ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `comment` varchar(255), `article_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081221')
+  [1m[36m (43.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20150108081239)
+  [1m[35m (99.9ms)[0m  CREATE TABLE `tags` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081239')
+  [1m[36m (43.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateArticlesTags (20150108085423)
+  [1m[35m (87.7ms)[0m  CREATE TABLE `articles_tags` (`id` int(11) auto_increment PRIMARY KEY, `articles_id` int(11), `tag_id` int(11),  INDEX `index_articles_tags_on_articles_id`  (`articles_id`) ,  INDEX `index_articles_tags_on_tag_id`  (`tag_id`) ) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108085423')
+  [1m[36m (43.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles_tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles_tags`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `articles` (`created_at`, `updated_at`) VALUES ('2015-01-09 11:03:48.055630', '2015-01-09 11:03:48.055630')[0m
+  [1m[35m (58.0ms)[0m  COMMIT
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mTag Load (1.6ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mTag Load (1.3ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1[0m
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.5ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `tags` (`created_at`, `updated_at`) VALUES ('2015-01-09 11:11:19.123294', '2015-01-09 11:11:19.123294')[0m
+  [1m[35m (49.3ms)[0m  COMMIT
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.5ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.6ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (1.3ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.5ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (1.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.7ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (1.5ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.5ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (1.4ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.6ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+Mysql2::Error: Unknown column 'articles_tags.article_id' in 'where clause': SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36m (185.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (435.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateArticles (20150108081142)
+  [1m[35m (74.4ms)[0m  CREATE TABLE `articles` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `content` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081142')
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150108081221)
+  [1m[35m (88.8ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `comment` varchar(255), `article_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081221')
+  [1m[36m (43.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20150108081239)
+  [1m[35m (88.8ms)[0m  CREATE TABLE `tags` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108081239')
+  [1m[36m (43.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateArticlesTags (20150108085423)
+  [1m[35m (88.1ms)[0m  CREATE TABLE `articles_tags` (`id` int(11) auto_increment PRIMARY KEY, `article_id` int(11), `tag_id` int(11),  INDEX `index_articles_tags_on_article_id`  (`article_id`) ,  INDEX `index_articles_tags_on_tag_id`  (`tag_id`) ) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150108085423')
+  [1m[36m (43.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'articles_tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `articles_tags`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'blog_db'
+  AND fk.table_name = 'tags'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `tags`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('ManchesterUNited', 'Champions', '2015-01-09 11:18:37.246560', '2015-01-09 11:18:37.246560')
+  [1m[36m (45.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `tags` (`name`, `created_at`, `updated_at`) VALUES ('Football', '2015-01-09 11:18:50.092364', '2015-01-09 11:18:50.092364')[0m
+  [1m[35m (46.8ms)[0m  COMMIT
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags`  ORDER BY `tags`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles_tags` (`article_id`, `tag_id`) VALUES (1, 1)
+  [1m[36m (45.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('London', 'BombBlast', '2015-01-09 11:20:01.255663', '2015-01-09 11:20:01.255663')
+  [1m[36m (34.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('Pakistan', 'BombBlast', '2015-01-09 11:20:08.065172', '2015-01-09 11:20:08.065172')[0m
+  [1m[35m (113.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('Iraq', 'BombBlast', '2015-01-09 11:20:15.899308', '2015-01-09 11:20:15.899308')
+  [1m[36m (36.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('Australia', 'BombBlast', '2015-01-09 11:20:22.758809', '2015-01-09 11:20:22.758809')[0m
+  [1m[35m (42.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `tags` (`name`, `created_at`, `updated_at`) VALUES ('Terrorism', '2015-01-09 11:20:41.475775', '2015-01-09 11:20:41.475775')
+  [1m[36m (42.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `articles_tags` (`article_id`, `tag_id`) VALUES (2, 2)[0m
+  [1m[35m (33.1ms)[0m  COMMIT
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 2[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `articles_tags` (`article_id`, `tag_id`) VALUES (3, 2)[0m
+  [1m[35m (50.0ms)[0m  COMMIT
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 3[0m
+  [1m[35mArticle Load (0.7ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `articles_tags` (`article_id`, `tag_id`) VALUES (4, 2)[0m
+  [1m[35m (35.3ms)[0m  COMMIT
+  [1m[36mTag Load (0.7ms)[0m  [1mSELECT `tags`.* FROM `tags` INNER JOIN `articles_tags` ON `tags`.`id` = `articles_tags`.`tag_id` WHERE `articles_tags`.`article_id` = 4[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('yes!', 1, '2015-01-09 11:22:07.461355', '2015-01-09 11:22:07.461355')
+  [1m[36m (44.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Oh no!', 2, '2015-01-09 11:22:15.714169', '2015-01-09 11:22:15.714169')
+  [1m[36m (34.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('Oh no!', 3, '2015-01-09 11:22:24.854117', '2015-01-09 11:22:24.854117')
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('oh No!', 1, '2015-01-09 11:22:31.050745', '2015-01-09 11:22:31.050745')
+  [1m[36m (46.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `comments` (`comment`, `article_id`, `created_at`, `updated_at`) VALUES ('oh No!', 4, '2015-01-09 11:22:36.558034', '2015-01-09 11:22:36.558034')
+  [1m[36m (49.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:54 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:54 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:54 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:54 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:54 +0545
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:54 +0545
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 17:07:58 +0545
+Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT `tags`.* FROM `tags`[0m
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 51ms (Views: 42.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 17:07:59 +0545
+
+
+Started GET "/articles/display_article?query=1" for 127.0.0.1 at 2015-01-09 17:08:00 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1[0m
+  Rendered articles/display_article.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/display_article?query=2" for 127.0.0.1 at 2015-01-09 17:08:04 +0545
+Processing by ArticlesController#display_article as HTML
+  Parameters: {"query"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2[0m
+  Rendered articles/display_article.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=1" for 127.0.0.1 at 2015-01-09 17:08:07 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"1"}
+  [1m[35mTag Load (0.3ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 1 LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 38.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=2" for 127.0.0.1 at 2015-01-09 17:08:11 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"2"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 2[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=1" for 127.0.0.1 at 2015-01-09 17:08:14 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"1"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 1 LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=1" for 127.0.0.1 at 2015-01-09 17:08:24 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"1"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 1 LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 1[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=2" for 127.0.0.1 at 2015-01-09 17:08:27 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"2"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 2[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/display_article_related_to_tags?query=2" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+Processing by TagsController#display_article_related_to_tags as HTML
+  Parameters: {"query"=>"2"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 2 LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` INNER JOIN `articles_tags` ON `articles`.`id` = `articles_tags`.`article_id` WHERE `articles_tags`.`tag_id` = 2[0m
+  Rendered tags/display_article_related_to_tags.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/article-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/tags-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/home-d7e61d25761401dd5793e66ecdefb61b.css?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/application-d00ee1ff401e9b9eddd04141530c64f3.js?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/tags-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/application-1ff19657ee15098e0589b73cf54ee26c.css?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/article-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/assets/home-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-09 17:09:15 +0545
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-09 17:09:23 +0545
+Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT `articles`.* FROM `articles`
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT `tags`.* FROM `tags`[0m
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.2ms)

@@ -16,7 +16,7 @@
   </tr>
   <%@articles.each do |x|%>
     <tr>
-      <td><%= link_to x.title, 'articles/display_article?query='+x.title
+      <td><%= link_to x.title, 'articles/display_article?query='+(x.id).to_s
       %></td>
       <td><%="#{x.content} "%></td>
     </tr>
@@ -32,11 +32,18 @@
     </tr>
     <%@tags.each do |x|%>
       <tr>
-        <td><%="#{x.name} "%></td>
+        <td><%= link_to x.name,
+        'tags/display_article_related_to_tags?query='+(x.id).to_s
+        %></td>
       </tr>
     <%end%>
   </table>
 </div>
-
+<div>
+  <form onsubmit="">
+    <input type="text"/>
+    <input type="submit" value="submit"/>
+  </form>
+</div>
 </body>
 </html>
