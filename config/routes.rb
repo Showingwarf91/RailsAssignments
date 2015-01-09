@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     member do
       get 'display_article'
     end
+    member do
+      get 'search'
+    end
   end
   resource :tags do
     member do
