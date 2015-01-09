@@ -7,4 +7,5 @@ class HomeController < ApplicationController
       format.json {render json: @articles}
     end
   end
+
 end

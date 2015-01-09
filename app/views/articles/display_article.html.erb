@@ -1,0 +1,18 @@
+
+<table>
+  <tr>
+    <td>Title</td>
+    <td>Content</td>
+    <td>Comments</td>
+  </tr>
+  <tr>
+    <td><%=@linked_article.title%></td>
+    <td><%=@linked_article.content%></td>
+    <td><%@linked_article.comments.each do |x|%>
+        <%=x.comment%>
+        <%end%>
+    </td>
+  </tr>
+</table>
+
+
